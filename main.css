@@ -48,17 +48,42 @@ margin-left: 5px;
 }
 #left-sidebar {
     grid-column: 1 / 3;
+    display: grid;
+    grid-row: 1fr 1fr;
+    height: 556px;
+    width: 246.5 px;
 }
 .left-sidebar-image {
     height: 133.45px;
     width: 237.25px;
 }
+.trump-solo {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.old-man {
+    grid-row: 2 / 3;
+}
+.text {
+    font-size: .5rem;
+    align-self: flex-end;
+}
 #main-content {
     grid-column: 2 / 3;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 90%;
 }
 .main-content-image {
     height: 302.91px;
     width: 538.5px;
+}
+#right-sidebar {
+    grid-column: 3 / 4;
+    display: flex;
+    flex-direction: column;
 }
 .right-sidebar-image {
     height: 78px;
