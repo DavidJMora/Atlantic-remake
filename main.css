@@ -1,8 +1,8 @@
 #container {
     display: grid;
-    grid-template: 1fr 3fr 1fr / 50px 9fr 50px;
+    grid-template: 1fr 3fr 1fr / 10px 9fr 10px;
     border: 1px solid black;
-    height: 100vh;
+    height: 100wh;
    width: 100vw;
 }
 #header {
@@ -37,7 +37,29 @@
     
     
 }
-#content {
+#content-container {
     grid-column: 2 / 3;
+    grid-row: 2 / 3;
     border: 1px solid black;
+    /* grid-template-columns: 1fr 3fr 1fr; */
+    height: auto;
+    width: auto;
+}
+#left-sidebar {
+    grid-column: 1 / 3;
+}
+.left-sidebar-image {
+    height: 133.45px;
+    width: 237.25px;
+}
+#main-content {
+    grid-column: 2 / 3;
+}
+.main-content-image {
+    height: 302.91px;
+    width: 538.5px;
+}
+.right-sidebar-image {
+    height: 78px;
+    width: 78px;
 }
